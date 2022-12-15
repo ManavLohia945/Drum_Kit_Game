@@ -44,7 +44,7 @@ function makeSound(key) {
 
 //Detecting button press
 var numberOfDrumBtn = document.querySelectorAll(".drum").length;
-for (var i = 0;i < numberOfDrumBtn;i++) {
+for (var i = 0;i < numberOfDrumBtn;i++) {//to add event listener to every button we make use of for loop. now every button will make perform the same func just the sound will be diff
   document.querySelectorAll(".drum")[i].addEventListener("click", handleClick);
   function handleClick()
     {
